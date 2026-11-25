@@ -1,0 +1,63 @@
+name: Bug 反馈
+description: 画面、物理、音频或 PWA 行为异常
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        音频类问题请务必填「是否出声」和圈速表读数，这两项能快速区分是音频链路还是物理输入的毛病。
+  - type: input
+    id: device
+    attributes:
+      label: 设备与浏览器
+      placeholder: 例如 iPhone 13 / iOS 17.2 Safari，Redmi K70 / Chrome 120
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开页面
+        2. 按住画圈到约 3 圈/秒
+        3. ……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望现象
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际现象
+    validations:
+      required: true
+  - type: dropdown
+    id: sound
+    attributes:
+      label: 是否出声
+      options:
+        - 能出声
+        - 完全没声
+        - 有声音但断续 / 破音
+        - 切后台回来后没声
+    validations:
+      required: true
+  - type: input
+    id: rps
+    attributes:
+      label: 出问题时圈速表读数
+      placeholder: 例如 2.4 圈/秒
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 操作方式
+      options:
+        - 手指画圈
+        - 鼠标画圈
+        - 自动甩
+        - 甩手机（体感）

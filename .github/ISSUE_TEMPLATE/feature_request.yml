@@ -1,0 +1,25 @@
+name: 功能建议
+description: 新玩法、视觉或交互改进
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 想要什么
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么值得做
+      placeholder: 解决了什么体验问题，或者对应哪种真实玩法的缺失
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraint
+    attributes:
+      label: 约束确认
+      options:
+        - label: 该改动不需要新增第三方依赖或构建步骤
+          required: true
