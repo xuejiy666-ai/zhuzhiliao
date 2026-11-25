@@ -2,6 +2,8 @@
   <img src="icon-512.png" width="120" alt="竹知了">
   <h1>竹知了 · 一转就哇哇叫</h1>
   <p>竹知了（竹蝉、拉线蝉、知了哇呜）的网页版模拟 —— 按住屏幕画圈甩起来，转得越快叫得越响。</p>
+  <h3><a href="https://xuejiy666-ai.github.io/zhuzhiliao/">▶ 点这里在线玩</a></h3>
+  <p><sub>https://xuejiy666-ai.github.io/zhuzhiliao/　手机、电脑直接打开，无需下载</sub></p>
 </div>
 
 ## 这是什么
